@@ -1,0 +1,13 @@
+<?xml version="1.0" ?><manifest>
+
+  <remote  name="xapp-le" fetch="." />
+  <default remote="xapp-le" revision="master" sync-j="4"/>
+
+  <project name="u-boot" path="u-boot" />
+  <project name="kernel" path="kernel" />
+  <project name="linux" path="linux" />
+  <project name="owl" path="owl" >
+	<copyfile dest="autobuild.sh" src="scripts/build.sh"/>
+  </project>
+
+</manifest>
